@@ -9,6 +9,11 @@ public class ArrayUtility {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number of elements in Array: ");
         int n = sc.nextInt();
+        while(n<=0){
+            System.out.println("Invalid size !");
+            System.out.print("Enter number of elements in Array: ");
+            n = sc.nextInt();
+        }
         int arr[] = new int[n];
 
         int i=0;
