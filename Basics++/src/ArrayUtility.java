@@ -26,7 +26,8 @@ public class ArrayUtility {
 
     public static void printArray(int[] arr){
         for(int i=0;i<arr.length;i++){
-            System.err.print(arr[i]+"\t");
+            System.err.print(arr[i]+"  ");
         }
+        System.out.println();
     }
 }
