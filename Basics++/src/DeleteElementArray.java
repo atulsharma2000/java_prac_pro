@@ -10,20 +10,27 @@ public class DeleteElementArray {
         
         arr=deleteElement(arr,e);
         
-        for(int i=0;i<arr.length;i++){
-            System.out.print(arr[i]+"\t");
-        }
+        ArrayUtility.printArray(arr);
+
     }
     public static int[] deleteElement(int[] arr,int e){
+
+        int occ = Occurenceinarray.noOfOccurences(arr, e);
+        if(occ==0) {
+            System.err.println("Element not found.");
+            return arr;
+        }
+
+        int newSize = arr.length - occ;
+        int[] newArr = new int[newSize];
+
+        int j=0;
         for(int i=0;i<arr.length;i++){
             if(arr[i]==e){
-                for(int j=i;j<(arr.length)-1;j++){
-                    arr[j]=arr[j+1];
-                }
-                arr[(arr.length)-1]=Integer.MAX_VALUE;
-                return arr;
+                continue;
             }
+            newArr[j++]=arr[i];
         }
-        return arr;
+        return newArr;
     }
 }
