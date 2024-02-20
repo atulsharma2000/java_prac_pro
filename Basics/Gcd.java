@@ -24,7 +24,7 @@ public class Gcd {
             if(a%i==0 && b%i==0){
                 gcd=i;
             }
-            i++;      
+            i++;        
         }
         return gcd;
     }
