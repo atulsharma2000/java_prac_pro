@@ -1,56 +1,57 @@
-import java.util.Scanner;
-
-public class Book {
-    String title;
+class Book {
+    static int totalNoOfBooks;
     String author;
+    String title;
     String isbn;
-    static int totalBooks;
+    boolean isBorrowed;
 
-    Book(String title,String author, String isbn){
+    static {
+        totalNoOfBooks = 0;
+    }
+    { // Object Init
+        totalNoOfBooks++;
+    }
+
+    Book(String isbn, String title, String author) {
+        this.isbn = isbn;
         this.title = title;
         this.author = author;
-        this.isbn = isbn;
-    }
-    Book(){
-        this("\0","\0","\0");
     }
 
-    public void borrowBook(){
-
-    }
-    public void returnBook(){
-
+    Book(String isbn) {
+        this(isbn, "Unknown", "Unknown");
     }
 
-    public static void getTotalBooks(){
-        totalBooks++;
+    static int getTotalNoOfBooks() {
+        return totalNoOfBooks;
+    }
+
+    void borrowBook() {
+        if (isBorrowed) {
+            System.out.println("Book is already borrowed");
+        } else {
+            this.isBorrowed = true;
+            System.out.println("Enjoy " + this.title);
+        }
+    }
+
+    void returnBook() {
+        if (isBorrowed) {
+            this.isBorrowed = false;
+            System.out.println("Hope you enjoyed, Please leave a review");
+        } else {
+            System.out.println("This book is already in the library");
+        }
     }
 
     public static void main(String[] args) {
-        System.out.println("\n======Welcome to Library System=====");
-        Scanner sc = new Scanner(System.in);
-        
-        System.out.print("Number of Books you want to Enter in Library:- ");
-        int numberOfEnteries = sc.nextInt();
-
-        Book[] obj = new Book[numberOfEnteries];  //array of objects
-        String a,b,c;
-
-        for(int i=0;i<numberOfEnteries;i++){
-            
-            System.out.println("Enter Details of Book["+(i+1)+"]: ");
-
-            System.out.print("Title: ");
-            a = sc.nextLine();
-            // System.out.print("\nAuthor: ");
-            // b = sc.nextLine();
-            // System.out.print("Isbn: ");
-            // c = sc.nextLine();
-            b="sad";
-            c="asd";
-
-            obj[i]  = new Book(a, b, c);
-        
-        }
+        Book designOfThings = new Book("1", "Design", "Author");
+        Book myBook = new Book("2");
+        System.out.println(Book.getTotalNoOfBooks());
+        designOfThings.borrowBook();
+        myBook.borrowBook();
+        designOfThings.borrowBook();
+        designOfThings.returnBook();
+        designOfThings.returnBook();
     }
 }
