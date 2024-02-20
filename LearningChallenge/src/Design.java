@@ -1,21 +1,28 @@
-public class Design {
+class Course {
+   static int maxCapacity = 100;
    String courseName;
-   int enrolledStudents;
-   static int maxCapacity;
+   int enrollments;
 
-   public void enrollStudent(String studentName){
+   String[] enrolledStudents;
 
+   Course(String courseName) {
+       this.courseName = courseName;
+       this.enrollments = 0;
+       this.enrolledStudents = new String[maxCapacity];
    }
 
-   public void unenrollStudent(String studentName){
-    
+   static void setMaxCapacity(int maxCapacity) {
+       Course.maxCapacity = maxCapacity;
    }
 
-   public static void setMaxCapacity(int capacity){
-
+   void enrollStudent(String studentName) {
+       enrolledStudents[enrollments] = studentName;
+       enrollments++;
    }
 
-   public static void main(String[] args) {
-     
+   void unenrollStudent(String studentName) {
+       System.out.println("Student removed");
+       enrollments--;
    }
+
 }

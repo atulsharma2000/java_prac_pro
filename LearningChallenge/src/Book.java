@@ -8,7 +8,7 @@ class Book {
     static {
         totalNoOfBooks = 0;
     }
-    { // Object Init
+    { // Object Initializer     (when object is created book++)
         totalNoOfBooks++;
     }
 
