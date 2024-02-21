@@ -34,5 +34,23 @@ public class Fibo {
 
                 }          
          }
+         
+         System.out.println("\n\n--n fibo numbers using rec --\n\n ");
+         System.out.print("Enter how many fibbonaci numbers you want: ");
+         int zzz = sc.nextInt();
+         for(int k=1;k<=zzz;k++){
+                System.out.print(recFibbo(k)+" ");
+         }
+         System.out.println("\n");
+
+ }
+
+ public static int recFibbo(int pos){
+        if(pos==1) return 0;
+        if(pos==2) return 1;
+        
+        return recFibbo(pos-1)+recFibbo(pos-2);
+
+        
  }
 }

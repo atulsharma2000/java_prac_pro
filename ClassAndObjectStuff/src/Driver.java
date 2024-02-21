@@ -15,6 +15,15 @@ public class Driver {
         // this keyword also helped here to directly call next method in same line [start() is returing "this"]
         xuvCar.start().drive();
 
+        Car thar  = new Car();
+        
     }
-   
+    
+    
+    @Override
+    protected void finalize() throws Throwable {
+        // TODO Auto-generated method stub
+        System.out.println("finalizeee");
+        super.finalize();
+    }
 }

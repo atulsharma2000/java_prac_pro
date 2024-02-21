@@ -27,14 +27,20 @@ public  class CantAccessNonStatic {
         minAge=11;
         obj.minAge=12;
         obj.awesome(obj);
+        // awesome();  cant access not static method from static
     }
 
     public void awesome(CantAccessNonStatic obj ){
         System.out.println(minAge);        
         System.out.println(h); 
         // System.out.println(sec); error
-        
+
+        hello(); // can access static methods without obj
     System.err.println(name);
     }
+
+static void hello(){
+
+}
 
 }

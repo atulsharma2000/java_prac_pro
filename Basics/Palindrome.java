@@ -24,5 +24,19 @@ public class Palindrome {
         System.out.println("YES Palindrome !!");
         else
             System.out.println("Not Palindrome");
+
+        System.out.println("\n\nusing rec: ");
+        int zz=recPlaindrome(n,0);
+        
+        if(zz==n) System.out.println("yes");
+        else System.out.println("no");
+    }
+
+
+    public static int recPlaindrome(int n,int temp){
+        if(n==0)
+            return temp;
+        temp = (temp*10)+(n%10);
+        return recPlaindrome(n/10, temp);
     }
 }
