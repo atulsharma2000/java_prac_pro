@@ -1,5 +1,15 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        
+        int[] arr = ArrayUtility.inputArray();
+        System.out.println("\n====Before Sort====");
+        ArrayUtility.printArray(arr);
+
+        System.out.println("\n====After Sort====");
+
+        SortingArrayUtility.bubbleSort(arr);
+
+        System.out.println("\n====After Sort====");
+        ArrayUtility.printArray(arr);
     }
 }
