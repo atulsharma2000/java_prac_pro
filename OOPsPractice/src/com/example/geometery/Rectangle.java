@@ -4,15 +4,12 @@ import java.util.Scanner;
 
 public class Rectangle {
     
-    public static float areaOfRectangle(){
+    public float length,breadth;
 
-     Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter length: ");
-        float l = sc.nextFloat();
-        System.out.print("Enter width: ");
-        float w = sc.nextFloat();
-
-        return l*w;
+    public Rectangle(float length, float breadth) {
+        this.length = length;
+        this.breadth = breadth;
     }
+
+
 }

@@ -1,7 +1,8 @@
 package com.example.utils;
 
 import java.util.Scanner;
-import com.example.geometery.*;
+import com.example.geometery.Circle;
+import com.example.geometery.Rectangle;;
 
 public class Calculator {
     public static void main(String[] args) {
@@ -15,10 +16,28 @@ public class Calculator {
         System.out.println();
 
         if(option==1){
-            System.out.println(Circle.areaOfCircle());
+           
+            System.out.print("Enter radius: ");
+            float r = sc.nextFloat();
+
+            Circle cir = new Circle(r);
+
+            double cirArea = Math.PI*Math.pow(cir.radius, 2);
+            System.out.println("Area of circle = "+ cirArea);
         }
         if(option==2){
-            System.out.println(Rectangle.areaOfRectangle());
+            
+            System.out.print("Enter length: ");
+            float l = sc.nextFloat();
+            System.out.print("Enter width: ");
+            float w = sc.nextFloat();
+            
+            Rectangle rec = new Rectangle(l,w);
+
+            float recArea = rec.length*rec.breadth;
+
+            System.out.println("Area of rec = "+ recArea);
+
         }
 
     }
