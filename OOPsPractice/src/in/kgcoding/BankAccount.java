@@ -2,7 +2,7 @@ package in.kgcoding;
 
 import java.util.Scanner;
 
-public class BankAccount {
+ class BankAccount {
     private int accountNumber;
     private String accountHolderName;
     private int balance;
@@ -24,7 +24,10 @@ public class BankAccount {
    
 
     public void deposit(int deposit){
-        this.balance += deposit ;
+        if(deposit < 1) 
+            System.out.println("Invalid value");
+        else
+            this.balance += deposit ;
     }
 
     public void withdraw(int withdraw){
