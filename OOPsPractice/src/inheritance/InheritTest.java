@@ -7,5 +7,11 @@ public class InheritTest {
 
         veh.commute();
         twoveh.commute();
+
+        Bike honda = new Bike();
+        honda.commute();
+        honda.start();
+        honda.balance();
+        honda.commute();
     }
 }
