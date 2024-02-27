@@ -7,7 +7,7 @@ public class App {
 
         System.out.println("\n====After Sort====");
 
-        SortingArrayUtility.bubbleSort(arr);
+        SortingUtility.bubbleSort(arr);
 
         System.out.println("\n====After Sort====");
         ArrayUtility.printArray(arr);

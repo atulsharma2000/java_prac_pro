@@ -1,4 +1,4 @@
-public class SortingArrayUtility {
+public class SortingUtility {
     
     public static void bubbleSort(int[] arr){
 
@@ -18,17 +18,12 @@ public class SortingArrayUtility {
                 }
             }
  
-            // If no two elements were
-            // swapped by inner loop, then break
+        
             if (swapped == false)
                 break;
         }
         
     }
 
-    // public static void swap(int a,int b){
-    //         int temp =a;
-    //         a=b;
-    //         b=temp;
-    // }
+    
 }
