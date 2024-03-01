@@ -1,6 +1,6 @@
 package abstractionandpolimorphism.abstractionprac;
 
-public class Vehicle {
+public abstract class Vehicle {
     private int tyres;
 
     public Vehicle(int tyres) {
