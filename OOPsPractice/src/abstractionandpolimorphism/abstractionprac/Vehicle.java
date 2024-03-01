@@ -1,5 +1,6 @@
 package abstractionandpolimorphism.abstractionprac;
 
+// abstract class cant have objects, it can only be inherited
 public abstract class Vehicle {
     private int tyres;
 
