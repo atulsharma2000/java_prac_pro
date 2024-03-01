@@ -1,4 +1,4 @@
-package abstractionandpolimorphism.abstractionprac;
+package abstractionandpolimorphism.abstractionprac.pracabstraction;
 
 public class Car extends Vehicle{
     private int doors;

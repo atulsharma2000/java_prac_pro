@@ -1,4 +1,4 @@
-package abstractionandpolimorphism.abstractionprac;
+package abstractionandpolimorphism.abstractionprac.pracabstraction;
 
 // abstract class cant have objects, it can only be inherited
 public abstract class Vehicle {

@@ -1,5 +1,5 @@
-package abstractionandpolimorphism.interfaceee.example2try;
-
+package abstractionandpolimorphism.abstractionprac.bestAbstractionexample;
+// main file , hiding comples details
 public abstract class Shape {
     public abstract double calculateArea();
 

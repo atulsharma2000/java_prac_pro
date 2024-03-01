@@ -1,4 +1,4 @@
-package abstractionandpolimorphism.interfaceee.example2try;
+package abstractionandpolimorphism.abstractionprac.bestAbstractionexample;
 
 import java.util.Scanner;
 
