@@ -8,9 +8,9 @@ public abstract class Shape {
     public static void main(String[] args) {
         
         Circle c = new Circle();
-        System.out.println(c.calculateArea());
+        System.out.printf("%.4f\n",c.calculateArea());
 
-
+ 
         Square s = new Square();
         System.out.println(s.calculateArea());
         
