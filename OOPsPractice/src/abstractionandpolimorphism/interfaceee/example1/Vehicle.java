@@ -1,12 +1,12 @@
-package abstractionandpolimorphism.abstractionprac;
+package abstractionandpolimorphism.interfaceee.example1;
 
 // abstract class cant have objects, it can only be inherited
-public abstract class Vehicle {
+public abstract class Vehicle implements InterfaceTransport {
     private int tyres;
 
     public abstract void makeStartSound(); //abstract method     
 
-
+ 
 
     public Vehicle(int tyres) {
         this.tyres = tyres;

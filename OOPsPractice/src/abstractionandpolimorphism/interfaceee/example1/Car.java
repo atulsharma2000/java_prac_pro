@@ -1,4 +1,4 @@
-package abstractionandpolimorphism.abstractionprac;
+package abstractionandpolimorphism.interfaceee.example1;
 
 public class Car extends Vehicle{
     private int doors;
@@ -11,5 +11,10 @@ public class Car extends Vehicle{
     @Override
     public void makeStartSound(){
         System.out.println("start SOUND....");
+    }
+
+    @Override
+    public void getSetGo(){
+        System.out.println("get set go....");
     }
 }
