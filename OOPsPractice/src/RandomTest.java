@@ -5,7 +5,7 @@ public class RandomTest {
         System.out.println(!(a<4));
         
         System.out.println(Integer.MAX_VALUE);
-
+        
 
     }
 }

@@ -1,4 +1,4 @@
-import java.util.Scanner;
+ import java.util.Scanner;
 
 // i made this class to create arrays of n elements for any program
 

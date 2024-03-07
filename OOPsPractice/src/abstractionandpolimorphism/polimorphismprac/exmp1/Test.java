@@ -9,6 +9,7 @@ public class Test {
 
         // Car cVehicle = new Vehicle(); // downcasting not allowed this way
 
+        Object ref = new Vehicle();
         
     }
 }
