@@ -6,7 +6,7 @@ public class ArrayUtility {
 
     public static int[] inputArray(){
 
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);    
         System.out.print("Enter number of elements in Array: ");
         int n = sc.nextInt();
         while(n<=0){
