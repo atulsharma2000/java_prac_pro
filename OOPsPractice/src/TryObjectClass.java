@@ -2,6 +2,7 @@
 
 // exnteds object is also by default added at compile time if no extending class written
 public class TryObjectClass extends Object {
+         
      public static void main(String[] args) {
         
 
